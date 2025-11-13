@@ -116,6 +116,29 @@ public class Main {
             System.out.print(flag + " ");
         }
         System.out.println();
+        // Задача 5
+        System.out.println("\nЗадача 5");
+        int[] inputArray5 = {150000, -50000, 200000, -100000, 180000};
+        int[] outputArray5 = new int[1];
 
+        int profitableMonths = 0;
+        for (int profit : inputArray5) {
+            if (profit > 0) {
+                profitableMonths++;
+            }
+        }
+        outputArray5[0] = profitableMonths;
+
+        System.out.print("inputArray5: ");
+        for (int num : inputArray5) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+
+        System.out.print("outputArray5: ");
+        for (int num : outputArray5) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
     }
 }
