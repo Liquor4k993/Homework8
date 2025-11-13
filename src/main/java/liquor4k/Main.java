@@ -69,6 +69,28 @@ public class Main {
             System.out.print(num + " ");
         }
         System.out.println();
+        // Задача 3
+        System.out.println("\nЗадача 3");
+        int[] inputArray3 = {4500, 6000, 3500, 7000, 5500};
+        boolean[] outputArray3 = new boolean[inputArray3.length];
+
+        index = 0;
+        for (int bonus : inputArray3) {
+            outputArray3[index] = bonus > 5000;
+            index++;
+        }
+
+        System.out.print("inputArray3: ");
+        for (int num : inputArray3) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+
+        System.out.print("outputArray3: ");
+        for (boolean flag : outputArray3) {
+            System.out.print(flag + " ");
+        }
+        System.out.println();
 
     }
 }
