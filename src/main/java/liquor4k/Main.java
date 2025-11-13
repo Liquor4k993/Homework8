@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         // Задача 1
-        System.out.println("=== Задача 1 ===");
+        System.out.println("Задача 1");
         int[] inputArray1 = {15000, 20000, 18000, 22000, 19000};
         float[] outputArray1 = new float[4];
 
@@ -47,5 +47,28 @@ public class Main {
             System.out.print(num + " ");
         }
         System.out.println();
+        // Задача 2
+        System.out.println("\nЗадача 2");
+        int[] inputArray2 = {50000, 75000, 60000, 80000, 65000};
+        float[] outputArray2 = new float[inputArray2.length];
+
+        int index = 0;
+        for (int salary : inputArray2) {
+            outputArray2[index] = salary * 0.13f;
+            index++;
+        }
+
+        System.out.print("inputArray2: ");
+        for (int num : inputArray2) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+
+        System.out.print("outputArray2: ");
+        for (float num : outputArray2) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+
     }
 }
