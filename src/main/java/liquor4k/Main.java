@@ -91,6 +91,31 @@ public class Main {
             System.out.print(flag + " ");
         }
         System.out.println();
+        // Задача 4
+        System.out.println("\nЗадача 4");
+        int[] inputArray4 = {5000, 3000, -1000, 2000, 4000};
+        boolean[] outputArray4 = new boolean[1];
+
+        boolean noOverdue = true;
+        for (int balance : inputArray4) {
+            if (balance < 0) {
+                noOverdue = false;
+                break;
+            }
+        }
+        outputArray4[0] = noOverdue;
+
+        System.out.print("inputArray4: ");
+        for (int num : inputArray4) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+
+        System.out.print("outputArray4: ");
+        for (boolean flag : outputArray4) {
+            System.out.print(flag + " ");
+        }
+        System.out.println();
 
     }
 }
